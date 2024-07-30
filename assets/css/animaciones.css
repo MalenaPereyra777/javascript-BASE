@@ -1,0 +1,70 @@
+:root {
+    --text: black;
+    --text-white: white;
+    --color: pink;
+    --secondary: rgb(250, 116, 161);
+    --background:rgb(255, 250, 241);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.05) ;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+#cart-toggle:checked ~ .overlay{
+    display: block;
+}
+
+#menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
+.navbar-list li a:hover {
+    color: var(--secondary);
+    transition: all 0.2s ease-in;
+    font-weight: 600;
+}
+
+.fa-cart-shopping:hover {
+    color: var(--secondary);
+    transition: all 0.2s ease-in;
+}
+
+.clothes-info a:hover,
+.fashion-info a:hover {
+    background: rgb(255,119,165);
+background: radial-gradient(circle, rgba(255,119,165,1) 20%, rgba(255,192,203,1) 93%);
+    color: var(--text-white);
+}
+
+.category:hover {    
+    background-color: var(--secondary);
+    box-shadow: -1px 34px 103px 4px rgba(0,0,0,0.18);
+-webkit-box-shadow: -1px 34px 103px 4px rgba(0,0,0,0.18);
+-moz-box-shadow: -1px 34px 103px 4px rgba(0,0,0,0.18);
+}
+
+.btn-shop:hover,
+.btn-send:hover,
+.btn-load:hover,
+.formulario-login a:hover,
+.formulario-singin a:hover {
+    background: rgb(255,119,165);
+background: radial-gradient(circle, rgba(255,119,165,1) 48%, rgba(255,192,203,1) 100%);
+transition: all 0.2s ease-in;
+}
