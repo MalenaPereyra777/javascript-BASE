@@ -1,0 +1,15 @@
+const productsContainer=document.querySelector(".products-container");
+const productsCart=document.querySelector(".cart-container");
+const total=document.querySelector(".total");
+const categoriesContainer=document.querySelector(".categories");
+const categoriesList=document.querySelectorAll(".category");
+const showMoreBtn=document.querySelector(".btn-load");
+const shopBtn=document.querySelector(".btn-shop");
+const cartBubble=document.querySelector(".cart-bubble");
+const cartBtn=document.querySelector(".cart-label");
+const menuBtn = document.querySelector(".menu-label");
+const cartMenu = document.querySelector(".cart");
+const barsMenu = document.querySelector(".navbar-list");
+const overlay = document.querySelector(".overlay");
+const successModal = document.querySelector(".add-modal");
+const deleteBtn = document.querySelector(".btn-delete");

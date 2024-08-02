@@ -13,13 +13,15 @@
 </head>
 <body>
     <header>
+
         <img class="logo" src="./assets/img/BMlogoblanco.png" alt="logo">
         <nav class="navbar">
 
-            <label for="menu-toggle" class="menu-label">
-                <img class="menu-icon" src="./assets/img/MenuB.png" alt="menu">
-              </label>
-              <input type="checkbox" id="menu-toggle">
+<!-- hacer menu hamburguesajs -->
+           <div class="menu-label">
+            <img class="menu-icon" src="./assets/img/MenuB.png" alt="menu">
+           </div>
+        
     
             <ul class="navbar-list">
                 <li><a href="#clothes">Home</a></li>
@@ -32,43 +34,31 @@
                 <li><a href="/registro.html" target="_blank">Registrarse</a></li>
             </ul> 
 
-            <label for="cart-toggle">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-              </label>
-              <input type="checkbox" id="cart-toggle">
+            <!-- hacer carrito js -->
+        <div class="cart-label">
+            <i class="fa-sharp fa-solid fa-cart-shopping">
+                <div class="cart-bubble">0</div>
+            </i>
+
+        </div>
+
               <div class="cart">
+
                 <h2>Tus productos</h2>
-                <div class="cart-item">
-                  <img src="./assets/img/fotoOutfit1.jpg" alt="outfit">
-                  <div class="item-info">
-                    <h3 class="item-title">EMILIA</h3>
-                    <span class="item-price">$10.500</span>
-                  </div>
-                  <div class="item-handler">
-                    <span class="quantity-handler down">-</span>
-                    <span class="item-quantity">1</span>
-                    <span class="quantity-handler up">+</span>
-                  </div>
-                </div>
-                <div class="cart-item">
-                  <img src="./assets/img/fotoOut2.jpg" alt="outfit">
-                  <div class="item-info">
-                    <h3 class="item-title">MADISON</h3>
-                    <span class="item-price">$12.000</span>
-                  </div>
-                  <div class="item-handler">
-                    <span class="quantity-handler down">-</span>
-                    <span class="item-quantity">1</span>
-                    <span class="quantity-handler up">+</span>
-                  </div>
+
+                <div class="cart-container">
+
                 </div>
 
+                <span class="divider"></span>
+
                 <div class="cart-total">
-                    <p>Total</p>
-                    <span>$22.500</span>
+                    <p>Total:</p>
+                    <span>$22.500 ARS</span>
                   </div>
         
                   <button class="btn-shop">Comprar</button>
+                  <button class="btn-delete">Vaciar carrito</button>
               </div>
                   <div class="overlay"></div>
         </nav>
@@ -83,7 +73,7 @@
             <a href="#products">SHOP NOW</a>
           </div>
           <div class="clothes-card">
-            <img class="modelo" src="./assets/img/model3.jpg" alt="Presentacion">
+            <img class="modelo" src="./assets/img/model1.jpg" alt="Presentacion">
           </div>
         </section>
         <section id="informacion">
@@ -120,7 +110,7 @@
 
         <section id="fashion">
             <div class="fashion-card">
-                <img class="model" src="./assets/img/fotoProduct1.jpg" alt="modelo">
+                <img class="model" src="./assets/img/set3.jpg" alt="modelo">
             </div>
             <div class="fashion-info">
                 <h2>La mejor moda desde 2020</h2>
@@ -133,72 +123,17 @@
         <section id="products">
             <h2>Categorías</h2>
             <div class="categories">
-                <button class="category">SS24</button>
-                <button class="category">Sets</button>
-                <button class="category">Vestidos</button>
-                <button class="category">Tops</button>
-                <button class="category">Pantalones</button>
+                <button class="category active">All</button>
+                <button class="category" data-category="SS24">SS24</button>
+                <button class="category" data-category="Sets">Sets</button>
+                <button class="category" data-category="Dresses">Dresses</button>
+                <button class="category" data-category="Tops">Tops</button>
+                <button class="category" data-category="Bottoms">Bottoms</button>
             </div>
+
+            <!-- hacer cards con datajs -->
             <div class="products-container">
-                <div class="product">
-                    <img src="./assets/img/fotoOutfit1.jpg" alt="Outfit">
-                    <div class="product-info">
-                        <div class="product-top">
-                            <h3>EMILIA</h3>
-                        </div>
-                        <div class="product-mid">
-                            <p>$10.500</p>
-                        </div>
-                        <div class="product-bot">
-                            <button class="btn-shop">SHOP</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="./assets/img/fotoOut2.jpg" alt="Outfit">
-                    <div class="product-info">
-                        <div class="product-top">
-                            <h3>MADISON</h3>
-                        </div>
-                        <div class="product-mid">
-                            <p>$12.000</p>
-                        </div>
-                        <div class="product-bot">
-                            <button class="btn-shop">SHOP</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="./assets/img/fotoOutf3.jpg" alt="Outfit">
-                    <div class="product-info">
-                        <div class="product-top">
-                            <h3>ROSINA</h3>
-                        </div>
-                        <div class="product-mid">
-                            <p>$13.500</p>
-                        </div>
-                        <div class="product-bot">
-                            <button class="btn-shop">SHOP</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="./assets/img/fotoOutf6.jpg" alt="Outfit">
-                    <div class="product-info">
-                        <div class="product-top">
-                            <h3>SANTORINI</h3>
-                        </div>
-                        <div class="product-mid">
-                            <p>$15.500</p>
-                        </div>
-                        <div class="product-bot">
-                            <button class="btn-shop">SHOP</button>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <button class="btn-load">Ver más productos</button>
         </section>
@@ -207,6 +142,8 @@
                     <h2>Contactate con nosotros</h2>
                     <p>Ingresa tu email y nuestro equipo se pondrá en contacto contigo</p>
                 </div>
+
+                <!-- validar formulario con js -->
                 <div class="contacto-formulario">
                     <label for="email"></label>
                     <input id="email" type="text" placeholder="Tu email">
@@ -223,6 +160,7 @@
             </ul>
         </div>
     </footer>
+    <div class="add-modal"></div>
     <script src="./data.js"></script>
     <script src="./index.js"></script>
 </body>
