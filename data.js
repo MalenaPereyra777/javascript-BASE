@@ -113,28 +113,28 @@ const productsData = [
     img: "./assets/img/tops4.jpg",
 },
 {
-    id: 13,
+    id: 17,
     name: "Cher",
     price: 12.500,
     category: "Bottoms",
     img: "./assets/img/bottom1.jpg",
 },
 {
-    id: 14,
+    id: 18,
     name: "Hannah",
     price: 21.000,
     category: "Bottoms",
     img: "./assets/img/bottom2.jpg",
 },
 {
-    id: 15,
+    id: 19,
     name: "Kourtney",
     price: 15.000,
     category: "Bottoms",
     img: "./assets/img/bottom3.jpg",
 },
 {
-    id: 16,
+    id: 20,
     name: "Afrika",
     price: 20.000,
     category: "Bottoms",
@@ -142,10 +142,8 @@ const productsData = [
 },
 ];
 
-/**
- * @param {number} size 
- * @returns {array}
- */
+// @param {number} size 
+// @returns {array}
 
 const DivideProductsInParts = (size) => {
     let productsList = [];

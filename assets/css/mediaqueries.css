@@ -42,9 +42,9 @@
         width: 50px;
     }
 
-    #menu-toggle:checked + .navbar-list {
-        display: flex;
-    }
+   .open-menu {
+    display: flex;
+   }
 
 
 .clothes-info {
